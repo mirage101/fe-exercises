@@ -1,0 +1,116 @@
+html {
+    background-color: #95DEE3;
+    border:0;
+    margin:0;
+    overflow: hidden;
+}
+
+.fish{
+    position: absolute;
+    right:0;
+    bottom:275px;
+    animation:fishMove-left 15s linear infinite normal both;
+}
+
+.smallFish{
+    position: absolute;
+    right:0;
+    bottom:255px;
+    animation:fishMove-left 20s linear infinite normal both;
+}
+.fish-2{
+    position: absolute;
+    left:0;
+    bottom:40%;
+    transform: scale(-1, 1);
+    animation:fishMove-right 10s linear infinite normal both;
+}
+.smallFish-2{
+    transform: scale(-1, 1);
+    left:0;
+    bottom:80%;
+    animation:fishMove-right 20s linear infinite normal both;
+}
+@keyframes fishMove-left{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-1000%);
+    }
+}
+
+@keyframes fishMove-right {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(1000%);
+    }
+        
+}
+.pebbles{
+    position: absolute;
+    bottom:0;
+    left:0;
+    width: 100%;
+}
+
+.bubbles {
+    position: absolute;
+    bottom:0;
+    background-color:#e7feff;
+    border:1px solid #e7feff;
+    border-radius: 50%;
+    animation:bubbleMove linear infinite normal both;
+}
+
+#bubbles1{
+    width:25px;
+    height:25px;
+    left:100px;
+    animation-duration: 4s;
+}
+
+#bubbles2{
+    width:15px;
+    height:15px;
+    left:350px;
+    animation-duration: 5s;
+}
+
+#bubbles3{
+    width:35px;
+    height:35px;
+    left:600px;
+    animation-duration: 3s;
+}
+
+#bubbles4{
+    width:10px;
+    height:10px;
+    left:900px;
+    animation-duration: 7s;
+}
+#bubbles5{
+    width:17px;
+    height:17px;
+    left:1100px;
+    animation-duration: 5s;
+}
+#bubbles6{
+    width:23px;
+    height:23px;
+    left:100px;
+    animation-duration: 6s;
+}
+
+@keyframes bubbleMove{
+    from{
+        bottom:0;
+    }
+    to{
+        bottom:100%;
+
+    }
+}
